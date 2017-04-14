@@ -170,6 +170,7 @@ LANGUAGE_SAMPLES = [{"name":"English","file":"resources/english_sample.txt"},
                     {"name":"Somali","file":"resources/somali_sample.txt"},
                     {"name":"Turkish","file":"resources/turkish_sample.txt"},
                     {"name":"Vietnamese","file":"resources/vietnamese_sample.txt"},
+                    {"name":"Chinese","file":"resources/chinese_sample.txt"},
 ]
 
 if __name__ == "__main__":
