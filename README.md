@@ -30,3 +30,14 @@ Supported languages
 *  uzbek
 *  vietnamese
 
+## Requirements
+
+*  python2.7
+*  flask
+*  gevent
+
+## Usage
+
+<pre>
+python run.py
+</pre>
