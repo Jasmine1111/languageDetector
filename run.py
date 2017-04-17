@@ -5,5 +5,6 @@ import config
 import languageDetector as LD 
 
 LD.setup()
+print("All is done!")
 http_server = WSGIServer(('', config.PORT), app)
 http_server.serve_forever()
