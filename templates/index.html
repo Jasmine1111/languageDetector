@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Language Tool</title>
+		<title>Sentiment Tool</title>
 		{% block templates %}
-			<script type="text/html" id="templ-results">
+			<script type="text/html" id="sentiment-results">
 			<div class="container col-md-8 col-md-offset-2">
 				<blockquote>
 					<p id="text"> <%= sentence %> </p>
-					<p> <b>Language: </b> <%= result %> </p>
+					<p> <b>Result: </b> <%= result %> </p>
 				</blockquote>
 			</div>
 			</script>
@@ -26,13 +26,13 @@
 	<body>
 		<div id="container" class="container col-md-8 col-md-offset-2">
 		{% block content %}
-			<center> <p> Paste or enter a piece of text below to check its language. </p> </center>
+			<center> <p> Paste or enter a piece of text with english or chinese below to check its sentiment. </p> </center>
 			<form id="form" role="form">
 				<textarea name="txt" id="txt" cols="30" rows="10" class="form-control input-sm"></textarea>
-				<input type="button" value="Submit" id="submit" class="form-control"/>
+				<input type="button" value="Submit" id="submit_sentiment" class="form-control"/>
 			</form>
 			<br><br>
-			<div id="result"></div>
+			<div id="sentiment_result"></div>
 		{% endblock %}
 		{% block footer %}
 			<div id="footer" class="navbar container col-md-5 col-md-offset-4">
@@ -54,7 +54,7 @@
 		{% block scripts %}
 			<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 			<script type="text/javascript" src="{{ url_for('static', filename='underscore-min.js') }}"></script>
-			<script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+			<script type="text/javascript" src="{{ url_for('static', filename='sentiment.js') }}"></script>
 		{% endblock %}
 		
 	</body>
