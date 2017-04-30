@@ -1,36 +1,21 @@
 {% extends "index.html" %}
 {% block content %}
-  <h1> language detector </h1>
-  <p>A language detection supports many languages</p>
-  <h2>Features</h2>
-  <p>Supported languages</p>
-  <ul>
-  <li>arabic</li>
-<li>azeri</li>
-<li>bengali</li>
-<li>burmese</li>
-<li>chinese</li>
-<li>english</li>
-<li>fresh</li>
-<li>hausa</li>
-<li>hindi</li>
-<li>japanese</li>
-<li>kinyarwanda</li>
-<li>nepali</li>
-<li>pashto</li>
-<li>persion</li>
-<li>pinyin</li>
-<li>russian</li>
-<li>sinhala</li>
-<li>somali</li>
-<li>spanish</li>
-<li>swahili</li>
-<li>tamil</li>
-<li>turkish</li>
-<li>ukrainian</li>
-<li>uzbek</li>
-<li>vietnamese</li>
-</ul>
+	<p>
+		This tool works by examining individual words and short sequences of words (n-grams) and comparing
+		them with a probability model. The probability model is built on a prelabeled test set
+		of IMDb movie reviews. It can also detect negations in phrases, i.e, the phrase "not bad" will be
+		classified as positive despite having two individual words with a negative sentiment.
+	</p>
+
+	<p>
+		You can read more about the details of the model in <a href="http://arxiv.org/abs/1305.6143"> this paper </a>.
+		The code for the web application and the training module is open source and <a href="https://github.com/vivekn/sentiment-web"> available on Github </a>. 
+	</p>
+
+	<p>
+		I've also provided an API for this tool, details on how to use it are on 
+		<a href="{{ url_for('api') }}"> this page </a>
+	</p>
 {% endblock %}
 {% block scripts %}
 {% endblock %}
